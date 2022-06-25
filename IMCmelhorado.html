@@ -1,0 +1,104 @@
+<!-- <meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é : " + imcCalculado);
+</script> -->
+
+<!-- <meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculaImc(altura, peso) {
+
+        return Math.round (peso / ( altura * altura ));
+    }
+
+    // mostra("O meu IMC é " + calculaImc(1.63, 48));
+    var imcCalculado = calculaImc(1.63, 48);
+    mostra("O meu IMC é " + imcCalculado); 
+</script> -->
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = Math.round (peso / (altura * altura));
+        return imc;
+    }
+
+    var nome = prompt("Informe o seu nome");
+    var alturaInformada = prompt("Informe sua altura");
+    var pesoInformado = prompt("Informe seu peso");
+    var imc = calculaImc(alturaInformada, pesoInformado);
+
+    mostra("O IMC calculado de " + nome + " é: " + imc);
+
+    if(imc < 18.5) {
+        mostra("Você está abaixo do recomendado.");
+    }
+    if(imc > 35) {
+        mostra("Você está acima do recomendado.");
+    }
+    if (imc >= 18.5 && imc <=35) {
+        
+            mostra("Você está dentro do recomendado.");
+        
+    }
+</script>
+
+ <!-- <meta charset="UTF-8">
+
+// <script>
+//     function pulaLinha() {
+
+//         document.write("<br>");
+//     }
+
+//     function mostra(frase) {
+//         document.write(frase);
+//         pulaLinha();
+//     }
+
+//     function a(numero1, numero2) {
+//         return numero1 + numero2;
+//     }
+
+//     function b(numero1, numero2) {
+//         return numero1 / numero2;
+//     }
+
+//     var resultado = a(10,20) + b(30,2);
+
+//     mostra(resultado);
+// </script> 

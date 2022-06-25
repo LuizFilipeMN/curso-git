@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    };
+
+    function exibeTitulo(titulo) {
+        document.write(titulo);
+        pulaLinha();
+    };
+
+    function mostra() {
+        document.write(29 - 21);
+
+    };
+
+    function texto(frase) {
+        document.write(frase);
+    };
+
+    exibeTitulo('<h1>Quantos anos você tem de diferença do seu irmão?</h1>');
+
+    texto("Meu nome é Luiz Filipe, tenho 21 anos e meu irmão 29 anos, a nossa diferença de idade seria: ") + mostra() + texto(" anos.");
+    
+
+</script>
+
+<h1>Atividade 2</h1>
+<script>
+    var difAnos = 2022 - 1500;
+    var medAnos = Math.round(difAnos/28);
+    
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function intro(titulo) {
+        document.write ("<h3>" + (titulo) + "</h3>");
+        pulaLinha; 
+    }
+
+    function mostra() {
+        document.write(medAnos)
+    };
+
+    function texto(texto) {
+        document.write(texto);
+    };
+
+    intro("Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, quantas gerações se passaram?")
+
+    texto("A diferença de anos entre 1500 a 2022 seria ") + difAnos + texto(" anos. Dessa forma ") + mostra() + texto(" gerações se passaram.");
+</script>
